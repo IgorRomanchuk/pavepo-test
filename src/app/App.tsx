@@ -9,28 +9,15 @@ const NotFoundPage = lazy(() => import("@pages/NotFoundPage"));
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Navigate to="/users" replace />} />
-        <Route
-          path="/users"
-          element={
-            <Suspense fallback={<Spinner />}>
-              <HomePage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/user/:id"
-          element={
-            <Suspense fallback={<Spinner />}>
-              <UserDetailsPage />
-            </Suspense>
-          }
-        />
-
-        <Route path="/not-found" element={<NotFoundPage />} />
-        <Route path="*" element={<Navigate to="/not-found" replace />} />
-      </Routes>
+      <Suspense fallback={<Spinner />}>
+        <Routes>
+          <Route index element={<Navigate to="/users" replace />} />
+          <Route path="/users" element={<HomePage />} />
+          <Route path="/user/:id" element={<UserDetailsPage />} />
+          <Route path="/not-found" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/not-found" replace />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };
