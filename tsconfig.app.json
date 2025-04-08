@@ -9,11 +9,12 @@
     "baseUrl": "src",
     "paths": {
       "@app/*": ["app/*"],
+      "@api/*": ["api/*"],
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@hooks/*": ["hooks/*"],
-      "@styles/*": ["styles/*"],
-      "@models/*": ["models/*"]
+      "@models/*": ["models/*"],
+      "@entities/*": ["entities/*"],
+      "@shared/*": ["shared/*"]
     },
 
     /* Bundler mode */

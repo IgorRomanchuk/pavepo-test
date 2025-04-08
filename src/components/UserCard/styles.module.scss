@@ -1,0 +1,30 @@
+@import '@shared/styles/colors.scss';
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid $color-background-dark;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 200px;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: $color-text-secondary;
+  }
+}

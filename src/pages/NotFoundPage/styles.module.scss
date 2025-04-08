@@ -1,0 +1,35 @@
+@import '@shared/styles/colors.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  color: $color-error;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 10px 0 30px;
+}
+
+.link {
+  padding: 10px 20px;
+  background: $color-info;
+  color: $color-white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $color-primary-dark;
+  }
+}

@@ -1,0 +1,15 @@
+@import "@shared/styles/colors.scss";
+
+.details {
+  max-width: 600px;
+
+  h2 {
+    margin-top: 20px;
+    color: $color-text;
+  }
+}
+
+.title {
+  color: $color-black;
+  font-size: 60px;
+}
